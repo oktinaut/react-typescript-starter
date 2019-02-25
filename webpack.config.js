@@ -1,5 +1,6 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const FixDefaultImportPlugin = require("webpack-fix-default-import-plugin");
 
 module.exports = {
     mode: "development",
@@ -32,6 +33,7 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: "public" },
         ]),
+        new FixDefaultImportPlugin(),
     ],
     externals: {
         "babylonjs": "BABYLON",

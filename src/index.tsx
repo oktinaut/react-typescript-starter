@@ -1,8 +1,8 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
 import { App } from "./App";
 
 const rootContainer = document.getElementById("root_container");
 
-ReactDOM.render(<App/>, rootContainer);
+ReactDOM.render(<App title="React Sample App" />, rootContainer);
