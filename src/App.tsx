@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
-import * as styles from "./App.scss";
+import * as styles from "./App.scss"
 
-interface IAppProps {
-    title: string;
+type AppProps = {
+    title: string
 }
 
-export const App: React.FC<IAppProps> = (props) => {
+export const App: React.FC<AppProps> = props => {
 
     return (
         <div className={styles["app"]}>{props.title}</div>
-    );
-};
+    )
+}

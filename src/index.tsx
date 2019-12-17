@@ -1,8 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from "react"
+import ReactDOM from "react-dom"
 
-import { App } from "./App";
+import { App } from "./App"
 
-const rootContainer = document.getElementById("root_container");
+const rootContainer = document.getElementById("root_container")
 
-ReactDOM.render(<App title="React Sample App" />, rootContainer);
+ReactDOM.render(<App title="React Sample App" />, rootContainer)
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+}
