@@ -1,4 +1,6 @@
-<center><h1>⚛️ React TypeScript Starter ⚛️</h1></center>
+<h1 style="text-align: center">⚛️ React TypeScript Starter ⚛️</h1>
+
+<p style="text-align: center">⚡️ This repository contains a boilerplate project for a TypeScript-based React application.</p>
 
 ## 🔎 Prerequisites
 
